@@ -1,0 +1,44 @@
+Gateway 1.1.0 validation — 2026-11-16 Asia/Shanghai
+
+PASS retry cap and online/offline Flash flush policy
+PASS persist, reboot, wrong ACK, confirmed deletion
+PASS interrupted commit and skip partially programmed record
+PASS CRC corruption rejected
+PASS full cache protects unsent sector and reuses confirmed sector
+PASS log ring wrap and reboot newest lookup
+PASS log filtering and persisted sample identity
+PASS CONNECT wire bytes, auth flags and bounds
+PASS QoS1 PUBLISH id, payload and bounds
+PASS SUBSCRIBE, variable remaining length, fragmented frames and oversized input
+PASS actual network auth, handshake and live RAM PUBACK lifetime
+PASS disk-first upload, fragmented PUBACK plus coalesced PINGRESP
+PASS disconnect keeps unconfirmed RAM data and grows retry delay
+
+ARM debug: PASS
+Memory region         Used Size  Region Size  %age Used
+             RAM:       96832 B       128 KB     73.88%
+
+          CCMRAM:           0 B        64 KB      0.00%
+
+           FLASH:      384480 B       768 KB     48.89%
+
+         PARAM_A:           0 B       128 KB      0.00%
+
+         PARAM_B:           0 B       128 KB      0.00%
+
+
+ARM release: PASS
+Memory region         Used Size  Region Size  %age Used
+             RAM:       96728 B       128 KB     73.80%
+
+          CCMRAM:           0 B        64 KB      0.00%
+
+           FLASH:      279708 B       768 KB     35.57%
+
+         PARAM_A:           0 B       128 KB      0.00%
+
+         PARAM_B:           0 B       128 KB      0.00%
+
+
+Hardware tests: not executed for this revision. GitHub Actions: prepared, not executed on remote.
+Known warnings: third-party sources and inherited linker RWX segment warning.

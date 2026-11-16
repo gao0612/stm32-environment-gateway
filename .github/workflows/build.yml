@@ -1,0 +1,19 @@
+name: Firmware and host tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install tools
+        run: sudo apt-get update && sudo apt-get install -y cmake ninja-build gcc-arm-none-eabi libnewlib-arm-none-eabi gcc
+      - name: Native tests
+        run: python3 tests/run_tests.py
+      - name: Debug firmware
+        run: cmake --preset Debug && cmake --build --preset Debug --parallel 2
+      - name: Release firmware
+        run: cmake --preset Release && cmake --build --preset Release --parallel 2

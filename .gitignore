@@ -1,0 +1,14 @@
+build/
+.cache/
+*.log
+*.map
+*.elf
+*.bin
+*.hex
+CMakeUserPresets.json
+App/Config/secrets.h
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*

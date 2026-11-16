@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "stlinkgdbtarget",
+            "request": "launch",
+            "name": "STM32Cube: Launch ST-Link GDB Server",
+            "origin": "snippet",
+            "cwd": "${workspaceFolder}",
+            "runEntry": "main",
+            "deviceName": "STM32F407ZGT6",
+            "imagesAndSymbols": [
+                {
+                    "imageFileName": "${workspaceFolder}/build/Debug/gateway_f407.elf"
+                }
+            ],
+            "serverHost": "127.0.0.1",
+            "serverInterface": "SWD",
+            "serverInterfaceFrequency": "1000",
+            "serverReset": "Software system reset",
+            "logFile": "${workspaceFolder}/gdbClient_log.txt",
+            "serverLogFile": "${workspaceFolder}/stlinkgdbserver_log.txt",
+            "preLaunchTask": "Build Debug"
+        }
+    ]
+}

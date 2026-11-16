@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+<rect width="1000" height="260" fill="#f4f7fc"/><g font-family="sans-serif" text-anchor="middle" font-size="18" fill="#19304c">
+<text x="500" y="30">STM32F407 Gateway v1.1 — Data Flow</text>
+<g fill="#deebff" stroke="#3978ba"><rect x="20" y="85" width="170" height="65" rx="8"/><rect x="240" y="85" width="170" height="65" rx="8"/><rect x="460" y="85" width="170" height="65" rx="8"/><rect x="780" y="85" width="200" height="65" rx="8"/><rect x="450" y="190" width="200" height="50" rx="8"/><rect x="700" y="190" width="240" height="50" rx="8"/></g>
+<text x="105" y="112">KTH2R / RS485</text><text x="105" y="137">DMA + Modbus</text><text x="325" y="125">Sample Queue</text><text x="545" y="112">RAM / Flash</text><text x="545" y="137">QoS1 + PUBACK</text><text x="880" y="112">W5500 Ethernet</text><text x="880" y="137">MQTT Broker</text><text x="550" y="221">ST7789 / LVGL</text><text x="820" y="221">W25Q64 Logs + Cache</text>
+<text x="215" y="125">→</text><text x="435" y="125">→</text><text x="705" y="125">⇄</text><text x="550" y="178">↓</text></g></svg>

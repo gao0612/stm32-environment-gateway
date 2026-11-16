@@ -1,0 +1,4 @@
+#ifndef GATEWAY_VERSION_H
+#define GATEWAY_VERSION_H
+#define GATEWAY_VERSION "1.1.1"
+#endif

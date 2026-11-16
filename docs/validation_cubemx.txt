@@ -1,0 +1,46 @@
+CubeMX integration 1.1.1 - 2026-11-16 Asia/Shanghai
+Actual CubeMX6.11.1 generation and safe-regeneration roundtrip: PASS
+PASS retry cap and online/offline Flash flush policy
+PASS persist, reboot, wrong ACK, confirmed deletion
+PASS interrupted commit and skip partially programmed record
+PASS CRC corruption rejected
+PASS full cache protects unsent sector and reuses confirmed sector
+PASS log ring wrap and reboot newest lookup
+PASS log filtering and persisted sample identity
+PASS CONNECT wire bytes, auth flags and bounds
+PASS QoS1 PUBLISH id, payload and bounds
+PASS SUBSCRIBE, variable remaining length, fragmented frames and oversized input
+PASS actual network auth, handshake and live RAM PUBACK lifetime
+PASS disk-first upload, fragmented PUBACK plus coalesced PINGRESP
+PASS disconnect keeps unconfirmed RAM data and grows retry delay
+PASS generated startup ownership, user entry points and protected Flash partition
+
+ARM debug: PASS
+Memory region         Used Size  Region Size  %age Used
+             RAM:       96840 B       128 KB     73.88%
+
+          CCMRAM:           0 B        64 KB      0.00%
+
+           FLASH:      384864 B       768 KB     48.94%
+
+         PARAM_A:           0 B       128 KB      0.00%
+
+         PARAM_B:           0 B       128 KB      0.00%
+
+
+ARM release: PASS
+Memory region         Used Size  Region Size  %age Used
+             RAM:       96736 B       128 KB     73.80%
+
+          CCMRAM:           0 B        64 KB      0.00%
+
+           FLASH:      280092 B       768 KB     35.62%
+
+         PARAM_A:           0 B       128 KB      0.00%
+
+         PARAM_B:           0 B       128 KB      0.00%
+
+
+Protected main/RTOS entries and single SPI2/IWDG owner: PASS
+Hardware flashing: not performed.
+Known CubeMX Windows generator sysmem/syscalls path issue handled by preserving existing system sources; vendor/RWX linker warnings remain.
